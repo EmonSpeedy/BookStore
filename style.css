@@ -18,8 +18,9 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #222;
-    padding: 15px 50px;
+    padding: 15px 30px;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -77,6 +78,7 @@ body {
     color: #fff;
     flex-direction: column;
     gap: 20px;
+    padding: 0 10px;
 }
 
 .cover-content h1 {
@@ -195,3 +197,102 @@ body {
 .footer .social-icons a:hover {
     color: #ff6600;
 }
+
+/* =============================
+   RESPONSIVE DESIGN
+   ============================= */
+
+/* Tablets (≤ 900px) */
+@media (max-width: 900px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feedback-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-cart {
+        flex-direction: column;
+    }
+
+    .cover-content h1 {
+        font-size: 24px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback {
+        padding: 30px 15px;
+    }
+}
+/* Hamburger Menu (hidden on desktop) */
+.menu-toggle {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Mobile Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    .auth-cart {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
