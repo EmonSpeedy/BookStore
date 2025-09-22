@@ -18,98 +18,178 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #222;
-    padding: 15px 30px;
+    padding: 12px 60px;
     color: #fff;
-    flex-wrap: wrap;
+    height: 70px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+/* Logo */
 .logo {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #ff6600;
 }
 
+/* Nav Links */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    margin-left: 100px;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #ff6600;
 }
 
+/* Auth + Cart + Flag Section */
 .auth-cart {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* Auth Links (Login + Register buttons) */
+.auth-links {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+}
+
 .auth-links a {
     color: #fff;
     text-decoration: none;
-    margin: 0 5px;
+    padding: 6px 12px;
+    border: 1px solid #ff6600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .auth-links a:hover {
-    text-decoration: underline;
+    background: #ff6600;
+    color: #fff;
 }
 
+/* Cart Icon */
 .cart-icon {
     color: #fff;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 .cart-icon:hover {
     color: #ff6600;
 }
 
-/* Cover */
+/* Language Button */
+.lang-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* flag size */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Cover Section */
 .cover {
     background: url("images/cover.jpg") no-repeat center center/cover;
-    height: 400px;
+    height: 85vh; /* 90% of viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 10px;
+    position: relative;
+}
+
+.cover-content {
+    max-width: 700px;
+    padding: 20px;
 }
 
 .cover-content h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 42px; /* slightly bigger for hero look */
+    margin-bottom: 15px;
+    line-height: 1.2;
 }
 
-.search-bar {
-    display: flex;
-    gap: 10px;
+.cover-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #f0f0f0;
 }
 
-.search-bar input {
-    padding: 8px 12px;
-    width: 250px;
-    border: none;
-    border-radius: 4px;
-}
-
-.search-bar button {
-    padding: 8px 16px;
+/* Banner Button */
+.cover-content button.explore-btn {
+    padding: 14px 32px;
+    font-size: 20px;
     border: none;
     background: #ff6600;
     color: #fff;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    margin-top: 25px;
 }
 
-.search-bar button:hover {
+.cover-content button.explore-btn:hover {
     background: #e65c00;
 }
+
+/* Search Bar */
+.cover-content .search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.cover-content input {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 400px; /* wider input */
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.cover-content .search-btn {
+    padding: 14px 24px;
+    font-size: 18px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cover-content .search-btn:hover {
+    background: #e65c00;
+}
+
 
 /* Books */
 .books {
@@ -136,23 +216,18 @@ body {
     border-radius: 5px;
 }
 
-.price {
-    font-weight: bold;
-    margin: 10px 0;
-    color: #ff6600;
-}
-
-.cart-btn {
-    padding: 8px 16px;
-    background: #222;
-    color: #fff;
+.book-card .book-cart-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
     border: none;
+    background: #ff6600;
+    color: #fff;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-.cart-btn:hover {
-    background: #ff6600;
+.book-card .book-cart-btn:hover {
+    background: #e65c00;
 }
 
 /* Feedback */
@@ -192,66 +267,14 @@ body {
     color: #fff;
     margin: 0 10px;
     font-size: 20px;
+    transition: color 0.3s ease;
 }
 
 .footer .social-icons a:hover {
     color: #ff6600;
 }
 
-/* =============================
-   RESPONSIVE DESIGN
-   ============================= */
-
-/* Tablets (≤ 900px) */
-@media (max-width: 900px) {
-    .book-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .feedback-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Mobile (≤ 600px) */
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .auth-cart {
-        flex-direction: column;
-    }
-
-    .cover-content h1 {
-        font-size: 24px;
-    }
-
-    .search-bar {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .search-bar input {
-        width: 90%;
-    }
-
-    .book-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feedback {
-        padding: 30px 15px;
-    }
-}
-/* Hamburger Menu (hidden on desktop) */
+/* Hamburger Menu */
 .menu-toggle {
     display: none;
     font-size: 22px;
@@ -259,40 +282,174 @@ body {
     color: #fff;
 }
 
-/* Mobile Navbar */
-@media (max-width: 600px) {
+/* Feedback Carousel (marquee effect) */
+.feedback-grid {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-grid-inner {
+    display: flex;
+    gap: 20px;
+    animation: scrollFeedback 15s linear infinite; /* adjust speed */
+}
+
+.feedback-card {
+    min-width: 300px;
+    flex-shrink: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+@keyframes scrollFeedback {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* scroll half of total width */
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* For Tablets and Mobile Phones (up to 768px) */
+@media (max-width: 768px) {
+    /* --- Navbar --- */
     .navbar {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .navbar-brand {
+        display: flex;
         justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show hamburger */
+        font-size: 24px;
     }
 
     .nav-links {
-        display: none;
+        display: none; /* Hide nav links by default */
         flex-direction: column;
-        background: #333;
         width: 100%;
-        text-align: center;
-        margin-top: 10px;
-        padding: 10px 0;
-        border-radius: 5px;
+        margin-left: 0;
+        gap: 0;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Show on hamburger click (via JS) */
     }
 
     .nav-links a {
-        padding: 10px 0;
+        padding: 12px 0;
         border-bottom: 1px solid #444;
+        font-size: 16px;
     }
 
     .auth-cart {
+        display: none; /* Hide auth/cart for a cleaner look */
+    }
+
+    /* --- Cover Section --- */
+    .cover {
+        height: 60vh;
+        padding: 0 20px;
+    }
+
+    .cover-content h1 {
+        font-size: 28px;
+    }
+
+    .cover-content p {
+        font-size: 16px;
+    }
+
+    .cover-content .search-bar {
         flex-direction: column;
-        margin-top: 10px;
+        width: 100%;
+    }
+
+    .cover-content input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .cover-content .search-btn,
+    .cover-content button.explore-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* --- Books Section --- */
+    .books {
+        padding: 40px 20px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr; /* Single column for books */
+        gap: 15px;
+    }
+
+    /* --- Feedback Section --- */
+    .feedback {
+        padding: 40px 20px;
+    }
+
+    .feedback-grid {
+        display: block; /* Stack feedback cards */
+        overflow: visible;
+    }
+
+    .feedback-grid-inner {
+        display: block;
+        animation: none; /* Stop the marquee animation */
+    }
+
+    .feedback-card {
+        min-width: auto;
+        margin-bottom: 15px;
+    }
+}
+
+/* For smaller phones (up to 480px) */
+@media (max-width: 480px) {
+    .cover-content h1 {
+        font-size: 24px;
+    }
+
+    .cover-content p {
+        font-size: 14px;
+    }
+
+    .books, .feedback {
+        padding: 30px 15px;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small phones */
+        gap: 15px;
+    }
+
+    .book-card {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .book-card .book-title {
+        font-size: 14px;
     }
 }
 

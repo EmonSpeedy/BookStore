@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store</title>
     <link rel="stylesheet" href="style.css">
     <!-- For social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navbar -->
     <header class="navbar">
-        <div class="logo">BookStore</div>
-
-        <!-- Hamburger Menu -->
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
+        <div class="navbar-brand">
+            <div class="logo" id="logo">BOOKIFY</div>
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
 
         <nav class="nav-links" id="nav-links">
@@ -28,86 +29,115 @@
 
         <div class="auth-cart">
             <div class="auth-links">
-                <a href="#">Login</a> | 
-                <a href="#">Register</a>
+                <a href="#" id="login">Sign In</a>
+                <a href="#" id="register">Sign Up</a>
             </div>
+
             <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            <!-- Language Toggle Button -->
+            <button id="lang-btn" class="lang-btn">
+                <span class="fi fi-gb"></span>
+            </button>
         </div>
     </header>
 
     <!-- Cover Section -->
     <section class="cover">
         <div class="cover-content">
-            <h1>Discover Your Next Favorite Book</h1>
+            <h1 id="cover-title">Discover Your Next Favorite Book</h1>
+            <p>Browse thousands of books across all genres, authors, and bestsellers.</p>
             <div class="search-bar">
-                <input type="text" placeholder="Search books...">
-                <button>Search</button>
+                <input type="text" id="search-placeholder" placeholder="Search books...">
+                <button class="search-btn" id="search-btn">Search</button>
             </div>
+            <button class="explore-btn">Explore</button>
         </div>
     </section>
+
+
 
     <!-- Books Section -->
     <section class="books">
-        <h2>Newly Stocked</h2>
+        <h2 id="books-title">Available Books</h2>
         <div class="book-grid">
             <div class="book-card">
                 <img src="images/cover.jpg" alt="Book">
-                <h3>Book Title</h3>
-                <p>Author Name</p>
-                <p class="price">$15</p>
-                <button class="cart-btn">Add to Cart</button>
+                <h3 class="book-title">Book Name</h3>
+                <p class="book-author">Author Name</p>
+                <p class="price">৳155</p>
+                <button class="book-cart-btn">Add to cart</button>
             </div>
             <div class="book-card">
                 <img src="images/cover.jpg" alt="Book">
-                <h3>Book Title</h3>
-                <p>Author Name</p>
-                <p class="price">$20</p>
-                <button class="cart-btn">Add to Cart</button>
+                <h3 class="book-title">Book Nam</h3>
+                <p class="book-author">Author Name</p>
+                <p class="price">৳180</p>
+                <button class="book-cart-btn">Add to cart</button>
             </div>
             <div class="book-card">
                 <img src="images/cover.jpg" alt="Book">
-                <h3>Book Title</h3>
-                <p>Author Name</p>
-                <p class="price">$12</p>
-                <button class="cart-btn">Add to Cart</button>
+                <h3 class="book-title">Book Nam</h3>
+                <p class="book-author">Author Name</p>
+                <p class="price">৳135</p>
+                <button class="book-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-card">
+                <img src="images/cover.jpg" alt="Book">
+                <h3 class="book-title">Book Nam</h3>
+                <p class="book-author">Author Name</p>
+                <p class="price">৳1520</p>
+                <button class="book-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-card">
+                <img src="images/cover.jpg" alt="Book">
+                <h3 class="book-title">Book Nam</h3>
+                <p class="book-author">Author Name</p>
+                <p class="price">৳170</p>
+                <button class="book-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-card">
+                <img src="images/cover.jpg" alt="Book">
+                <h3 class="book-title">Book Nam</h3>
+                <p class="book-author">Author Name</p>
+                <p class="price">৳345</p>
+                <button class="book-cart-btn">Add to cart</button>
             </div>
         </div>
     </section>
 
-    <!-- Feedback Section -->
     <section class="feedback">
-        <h2>What our customers say</h2>
+        <h2 id="feedback-title">What our customer says</h2>
         <div class="feedback-grid">
-            <div class="feedback-card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aperiam ratione quisquam voluptatem.</p>
-                <h4>- Abdullah Al Nahid</h4>
-            </div>
-            <div class="feedback-card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore maxime itaque perspiciatis!</p>
-                <h4>- Mohammad Muktar</h4>
+            <div class="feedback-grid-inner">
+                <div class="feedback-card">
+                    <p id="feedback1-text">এই ওয়েবসাইট থেকে বই কেনা খুব সহজ।</p>
+                    <h4 id="feedback1-user">- Abdullah Al Nahid</h4>
+                </div>
+                <div class="feedback-card">
+                    <p id="feedback2-text">অভিজ্ঞতা খুবই ভালো। ডেলিভারি দ্রুত।</p>
+                    <h4 id="feedback2-user">- Mohammad Mukter</h4>
+                </div>
+                <div class="feedback-card">
+                    <p id="feedback3-text">বইয়ের কালেকশন অসাধারণ।</p>
+                    <h4 id="feedback3-user">- Rashed Khan</h4>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Follow Us</p>
+        <p id="footer-follow">Follow Us on social platforms</p>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p>&copy; 2025 BookStore</p>
+        <p id="footer-copy">&copy; 2025 BOOKIFY</p>
     </footer>
 
-    <!-- JS for Hamburger Menu -->
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
