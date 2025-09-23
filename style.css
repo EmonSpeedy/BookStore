@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #e6e1e1;
+    background: whitesmoke;
     color: #333;
 }
 
@@ -93,25 +93,6 @@ body {
     color: #ff6600;
 }
 
-/* Language Button */
-.lang-btn {
-    background: #e7e4e4;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px; /* flag size */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
-    margin-right: 20px
-}
-
-.lang-btn:hover {
-    transform: scale(1.05);
-}
 
 /* Cover Section */
 .cover {
@@ -206,7 +187,7 @@ body {
 }
 
 .book-card {
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -312,4 +293,87 @@ body {
     100% { transform: translateX(-50%); } /* scroll half of total width */
 }
 
+/* ==================== SIGN UP PAGE ====================  */
 
+.signup-title {
+    text-align: center;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: whitesmoke;
+}
+
+.signup-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 350px;
+}
+
+.signup-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-form-group {
+  margin-bottom: 15px;
+}
+
+.signup-form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.signup-form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-form-group input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37,117,252,0.5);
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #2575fc;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #1a5bd1;
+}
+
+.signup-redirect {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-redirect a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.signup-redirect a:hover {
+  text-decoration: underline;
+}
