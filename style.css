@@ -27,31 +27,32 @@ body {
     z-index: 1000;
 }
 
-/* Logo */
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #ff6600;
+    margin: 0;
+    padding: 0;
+    height: auto;   /* adjust height */
+    width: auto;    /* maintain aspect ratio */
+    margin-top: 10px;
 }
+
 
 /* Nav Links */
 .nav-links {
     display: flex;
-    gap: 25px;
-    margin-left: 100px;
+    gap: 35px;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ff6600;
+    color: #0e841a;
+    text-decoration: underline;
 }
 
 /* Auth + Cart + Flag Section */
@@ -72,13 +73,13 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 6px 12px;
-    border: 1px solid #ff6600;
+    border: 1px solid #1b8a13;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .auth-links a:hover {
-    background: #ff6600;
+    background: #056412;
     color: #fff;
 }
 
@@ -90,14 +91,14 @@ body {
 }
 
 .cart-icon:hover {
-    color: #ff6600;
+    color: #0f871d;
 }
 
 
 /* Cover Section */
 .cover {
     background: url("images/cover.jpg") no-repeat center center/cover;
-    height: 90vh; /* 90% of viewport height */
+    height: 85vh; /* 90% of viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +129,7 @@ body {
     padding: 14px 32px;
     font-size: 20px;
     border: none;
-    background: #ff6600;
+    background: #078e26;
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
@@ -137,10 +138,11 @@ body {
 }
 
 .cover-content button.explore-btn:hover {
-    background: #e65c00;
+    background: #056412;
 }
 
 /* Search Bar */
+
 .cover-content .search-bar {
     display: flex;
     justify-content: center;
@@ -149,6 +151,7 @@ body {
 }
 
 .cover-content input {
+    text-align: left;
     padding: 14px 20px;
     border: none;
     border-radius: 5px;
@@ -161,7 +164,7 @@ body {
     padding: 14px 24px;
     font-size: 18px;
     border: none;
-    background: #ff6600;
+    background: #078e26;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
@@ -169,7 +172,7 @@ body {
 }
 
 .cover-content .search-btn:hover {
-    background: #e65c00;
+    background: #056412;
 }
 
 
@@ -182,7 +185,7 @@ body {
 .book-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 60px;
     margin-top: 30px;
 }
 
@@ -194,22 +197,23 @@ body {
 }
 
 .book-card img {
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
 }
 
 .book-card .book-cart-btn {
+    font-size: large;
     margin-top: 10px;
     padding: 8px 12px;
     border: none;
-    background: #ff6600;
+    background: #0e9236;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .book-card .book-cart-btn:hover {
-    background: #e65c00;
+    background: #097023;
 }
 
 /* Feedback */
@@ -235,7 +239,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #222;
+    background: #074d1d;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -248,12 +252,16 @@ body {
 .footer .social-icons a {
     color: #fff;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 25px;
     transition: color 0.3s ease;
 }
 
+.footer p {
+    font-size: 18px;
+}
+
 .footer .social-icons a:hover {
-    color: #ff6600;
+    color: #20aa19;
 }
 
 /* Hamburger Menu */
