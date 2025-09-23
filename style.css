@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f8f8f8;
+    background: #e6e1e1;
     color: #333;
 }
 
@@ -18,8 +18,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #222;
-    padding: 12px 60px;
-    color: #fff;
+    padding: 10px 50px;
+    color: #c9c2c2;
     height: 70px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     position: sticky;
@@ -95,7 +95,7 @@ body {
 
 /* Language Button */
 .lang-btn {
-    background: #fff;
+    background: #e7e4e4;
     border: 1px solid #ccc;
     cursor: pointer;
     border-radius: 5px;
@@ -103,9 +103,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px; /* flag size */
+    font-size: 16px; /* flag size */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: transform 0.2s ease;
+    margin-right: 20px
 }
 
 .lang-btn:hover {
@@ -115,7 +116,7 @@ body {
 /* Cover Section */
 .cover {
     background: url("images/cover.jpg") no-repeat center center/cover;
-    height: 85vh; /* 90% of viewport height */
+    height: 90vh; /* 90% of viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,145 +312,4 @@ body {
     100% { transform: translateX(-50%); } /* scroll half of total width */
 }
 
-/* ==========================================================================
-   Responsive Design
-   ========================================================================== */
-
-/* For Tablets and Mobile Phones (up to 768px) */
-@media (max-width: 768px) {
-    /* --- Navbar --- */
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
-        height: auto;
-    }
-
-    .navbar-brand {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .menu-toggle {
-        display: block; /* Show hamburger */
-        font-size: 24px;
-    }
-
-    .nav-links {
-        display: none; /* Hide nav links by default */
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-        gap: 0;
-    }
-
-    .nav-links.active {
-        display: flex; /* Show on hamburger click (via JS) */
-    }
-
-    .nav-links a {
-        padding: 12px 0;
-        border-bottom: 1px solid #444;
-        font-size: 16px;
-    }
-
-    .auth-cart {
-        display: none; /* Hide auth/cart for a cleaner look */
-    }
-
-    /* --- Cover Section --- */
-    .cover {
-        height: 60vh;
-        padding: 0 20px;
-    }
-
-    .cover-content h1 {
-        font-size: 28px;
-    }
-
-    .cover-content p {
-        font-size: 16px;
-    }
-
-    .cover-content .search-bar {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .cover-content input {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .cover-content .search-btn,
-    .cover-content button.explore-btn {
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    /* --- Books Section --- */
-    .books {
-        padding: 40px 20px;
-    }
-
-    .book-grid {
-        grid-template-columns: 1fr; /* Single column for books */
-        gap: 15px;
-    }
-
-    /* --- Feedback Section --- */
-    .feedback {
-        padding: 40px 20px;
-    }
-
-    .feedback-grid {
-        display: block; /* Stack feedback cards */
-        overflow: visible;
-    }
-
-    .feedback-grid-inner {
-        display: block;
-        animation: none; /* Stop the marquee animation */
-    }
-
-    .feedback-card {
-        min-width: auto;
-        margin-bottom: 15px;
-    }
-}
-
-/* For smaller phones (up to 480px) */
-@media (max-width: 480px) {
-    .cover-content h1 {
-        font-size: 24px;
-    }
-
-    .cover-content p {
-        font-size: 14px;
-    }
-
-    .books, .feedback {
-        padding: 30px 15px;
-    }
-
-    .book-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on small phones */
-        gap: 15px;
-    }
-
-    .book-card {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .book-card .book-title {
-        font-size: 14px;
-    }
-}
 
