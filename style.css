@@ -12,6 +12,10 @@ body {
     color: #333;
 }
 
+body sub {
+    font-size: 14px;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -65,7 +69,7 @@ body {
 /* Auth Links (Login + Register buttons) */
 .auth-links {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     font-size: 14px;
 }
 
@@ -97,14 +101,15 @@ body {
 
 /* Cover Section */
 .cover {
-    background: url("images/cover.jpg") no-repeat center center/cover;
-    height: 85vh; /* 90% of viewport height */
+    background: url("images/banner.jpg") no-repeat center center/cover;
+    height: 88vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
     position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4); /* dark overlay */
 }
 
 .cover-content {
@@ -161,7 +166,7 @@ body {
 }
 
 .cover-content .search-btn {
-    padding: 14px 24px;
+    padding: 5px 15px;
     font-size: 18px;
     border: none;
     background: #078e26;
@@ -182,6 +187,14 @@ body {
     text-align: center;
 }
 
+.books-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #eef4f0;
+    background-color: rgb(21, 21, 21);
+}
+
 .book-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -197,19 +210,42 @@ body {
 }
 
 .book-card img {
-    width: 80%;
+    width: 85%;
+    height: 70%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .book-card .book-cart-btn {
-    font-size: large;
-    margin-top: 10px;
+    margin-left: 28px;
+    font-size: 14px;
     padding: 8px 12px;
     border: none;
     background: #0e9236;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.book-card-footer {
+    display: flex;
+    justify-content: space-between;  /* button left, stock right */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.book-card .stock-tag {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 28px;
+}
+
+.book-card .stock-available {
+    color: green;
+}
+
+.book-card .stock-unavailable {
+    color: red;
 }
 
 .book-card .book-cart-btn:hover {
@@ -221,6 +257,14 @@ body {
     padding: 50px;
     text-align: center;
     background: #f0f0f0;
+}
+
+.feedback-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #eef4f0;
+    background-color: rgb(21, 21, 21);
 }
 
 .feedback-grid {
