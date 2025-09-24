@@ -227,6 +227,22 @@ body sub {
     border-radius: 5px;
 }
 
+.show-more-book {
+    margin-top: 50px;
+    padding: 12px 28px;
+    font-size: 17px;
+    border: none;
+    background: #0e9236;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.show-more-book:hover {
+    background: #097023;
+}
+
 .book-card-footer {
     display: flex;
     justify-content: space-between;  /* button left, stock right */
@@ -235,7 +251,7 @@ body sub {
 }
 
 .book-card .stock-tag {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 28px;
 }
@@ -362,8 +378,9 @@ body sub {
 .signup-card {
   background: #fff;
   padding: 30px;
+  border: 2px solid #1aa72f;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(11, 210, 11, 0.2);
   width: 350px;
 }
 
@@ -395,8 +412,8 @@ body sub {
 }
 
 .signup-form-group input:focus {
-  border-color: #2575fc;
-  box-shadow: 0 0 5px rgba(37,117,252,0.5);
+  border-color: #219514;
+  box-shadow: 0 0 5px rgba(18, 153, 13, 0.5);
 }
 
 .signup-btn {
@@ -405,14 +422,14 @@ body sub {
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  background: #2575fc;
+  background: #0e9236;
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .signup-btn:hover {
-  background: #1a5bd1;
+  background: #097023;
 }
 
 .signup-redirect {
@@ -422,7 +439,7 @@ body sub {
 }
 
 .signup-redirect a {
-  color: #2575fc;
+  color: #168b1a;
   text-decoration: none;
 }
 
