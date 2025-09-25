@@ -8,6 +8,10 @@
     <!-- For social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -15,7 +19,7 @@
         <div class="navbar-brand">
             <div class="logo">
                 <a href="index.html ">
-                    <img src="images/logo12.png" alt="My Website Logo" width="150">
+                    <img src="images/logo.png" alt="My Website Logo" width="150">
                 </a>
             </div>
             <!-- Hamburger Menu -->
@@ -25,10 +29,10 @@
         </div>
 
         <nav class="nav-links" id="nav-links">
-            <a href="#">হোম</a>
-            <a href="#">বইসমূহ</a>
-            <a href="#">যোগাযোগ</a>
-            <a href="#">আমাদের সম্পর্কে</a>
+            <a href="index.html">হোম</a>
+            <a href="all-books.html">বইসমূহ</a>
+            <a href="contactform.html">যোগাযোগ</a>
+            <a href="aboutus.html">আমাদের সম্পর্কে</a>
         </nav>
 
         <div class="auth-cart">
@@ -48,9 +52,9 @@
             <p>"রাসূলুল্লাহ ﷺ ইরশাদ করেন : শেষ জামানায় জ্ঞানই হবে তোমাদের সর্বশ্রেষ্ঠ সম্পদ।"</p>
             <div class="search-bar">
                 <input type="text" class="search-placeholder" placeholder="পছন্দের বই খুঁজুন...">
-                <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                <button class="search-btn"><i class="fa-solid fa-search"></i></button>
             </div>
-            <button class="explore-btn">এক্সপ্লোর</button>
+            <a href="all-books.html"><button class="explore-btn">BROWSE</button></a>
         </div>
     </section>
 
@@ -58,84 +62,60 @@
     <section class="books">
         <h2 class="books-title">আমাদের বইসমূহ</h2>
         <div class="book-grid">
-            <div class="book-card">
-                <img src="images/image1.jpg" alt="Book">
-                <h3 class="book-title">বইয়ের নাম</h3>
+           <div class="book-card">
+                <a href="book-detail.html"><img src="images/image1.jpg" alt="Book"></a><br>
+                <a href="book-detail.html"><strong>বইয়ের নাম</strong></a>
                 <p class="book-author">লেখকের নাম</p>
+                <span class="stock-tag stock-available">In Stock</span>
                 <p class="price">৳155</p>
-                <div class="book-card-footer">
-                    <button class="book-cart-btn">কার্টে যোগ করুন</button>
-                    <span class="stock-tag stock-available">Available</span>
-                    <!-- OR -->
-                    <!-- <span class="stock-tag stock-unavailable">Not Available</span> -->
-                </div>
+                <button class="book-cart-btn">কার্টে যোগ করুন</button>
             </div>
-            <div class="book-card">
-                <img src="images/image2.jpg" alt="Book">
-                <h3 class="book-title">বইয়ের নাম</h3>
+           <div class="book-card">
+                <a href="book-detail.html"><img src="images/image2.jpg" alt="Book"></a><br>
+                <a href="book-detail.html"><strong>বইয়ের নাম</strong></a>
                 <p class="book-author">লেখকের নাম</p>
-                <p class="price">৳180</p>
-                <div class="book-card-footer">
-                    <button class="book-cart-btn">কার্টে যোগ করুন</button>
-                    <!-- <span class="stock-tag stock-available">Available</span> -->
-                    <!-- OR -->
-                    <span class="stock-tag stock-unavailable">Not Available</span>
-                </div>
+                <span class="stock-tag stock-unavailable">Stocked Out</span>
+                <p class="price">৳155</p>
+                <button class="book-cart-btn">কার্টে যোগ করুন</button>
             </div>
-            <div class="book-card">
-                <img src="images/image3.jpg" alt="Book">
-                <h3 class="book-title">বইয়ের নাম</h3>
+           <div class="book-card">
+                <a href="book-detail.html"><img src="images/image3.jpg" alt="Book"></a><br>
+                <a href="book-detail.html"><strong>বইয়ের নাম</strong></a>
                 <p class="book-author">লেখকের নাম</p>
-                <p class="price">৳135</p>
-                <div class="book-card-footer">
-                    <button class="book-cart-btn">কার্টে যোগ করুন</button>
-                    <span class="stock-tag stock-available">Available</span>
-                    <!-- OR -->
-                    <!-- <span class="stock-tag stock-unavailable">Not Available</span> -->
-                </div>
+                <span class="stock-tag stock-available">In Stock</span>
+                <p class="price">৳155</p>
+                <button class="book-cart-btn">কার্টে যোগ করুন</button>
             </div>
-            <div class="book-card">
-                <img src="images/image4.jpg" alt="Book">
-                <h3 class="book-title">বইয়ের নাম</h3>
+           <div class="book-card">
+                <a href="book-detail.html"><img src="images/image4.jpg" alt="Book"></a><br>
+                <a href="book-detail.html"><strong>বইয়ের নাম</strong></a>
                 <p class="book-author">লেখকের নাম</p>
-                <p class="price">৳1520</p>
-                <div class="book-card-footer">
-                    <button class="book-cart-btn">কার্টে যোগ করুন</button>
-                    <!-- <span class="stock-tag stock-available">Available</span> -->
-                    <!-- OR -->
-                    <span class="stock-tag stock-unavailable">Not Available</span>
-                </div>
+                <span class="stock-tag stock-available">In Stock</span>
+                <p class="price">৳155</p>
+                <button class="book-cart-btn">কার্টে যোগ করুন</button>
             </div>
-            <div class="book-card">
-                <img src="images/image5.jpg" alt="Book">
-                <h3 class="book-title">বইয়ের নাম</h3>
+           <div class="book-card">
+                <a href="book-detail.html"><img src="images/image5.jpg" alt="Book"></a><br>
+                <a href="book-detail.html"><strong>বইয়ের নাম</strong></a>
                 <p class="book-author">লেখকের নাম</p>
-                <p class="price">৳170</p>
-                <div class="book-card-footer">
-                    <button class="book-cart-btn">কার্টে যোগ করুন</button>
-                    <span class="stock-tag stock-available">Available</span>
-                    <!-- OR -->
-                    <!-- <span class="stock-tag stock-unavailable">Not Available</span> -->
-                </div>
+                <span class="stock-tag stock-available">In Stock</span>
+                <p class="price">৳155</p>
+                <button class="book-cart-btn">কার্টে যোগ করুন</button>
             </div>
-            <div class="book-card">
-                <img src="images/image6.jpg" alt="Book">
-                <h3 class="book-title">বইয়ের নাম</h3>
+           <div class="book-card">
+                <a href="book-detail.html"><img src="images/image6.jpg" alt="Book"></a><br>
+                <a href="book-detail.html"><strong>বইয়ের নাম</strong></a>
                 <p class="book-author">লেখকের নাম</p>
-                <p class="price">৳345</p>
-                <div class="book-card-footer">
-                    <button class="book-cart-btn">কার্টে যোগ করুন</button>
-                    <span class="stock-tag stock-available">Available</span>
-                    <!-- OR -->
-                    <!-- <span class="stock-tag stock-unavailable">Not Available</span> -->
-                </div>
+                <span class="stock-tag stock-unavailable">Stocked Out</span>
+                <p class="price">৳155</p>
+                <button class="book-cart-btn">কার্টে যোগ করুন</button>
             </div>
         </div>
-        <button class="show-more-book">আরও দেখুন</button>
+        <a href="all-books.html"><button class="show-more-book">সবগুলো দেখুন</button></a>
     </section>
 
     <section class="feedback">
-        <h2 class="feedback-title">কাস্টমারদের বাণী</h2>
+        <h2 class="feedback-title">কাস্টমারদের অভিমত</h2>
         <div class="feedback-grid">
             <div class="feedback-grid-inner">
                 <div class="feedback-card">
@@ -154,12 +134,11 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="footer">
         <p id="footer-follow">আমাদের সামাজিক প্ল্যাটফর্মে অনুসরণ করুন</p>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/dearpublication" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>

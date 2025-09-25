@@ -1,0 +1,131 @@
+body {
+    width: 90%;
+    font-family: "Tiro Bangla", serif;
+    font-weight: 400;
+    padding: 20px;
+    background: #f9f9f9;
+    margin: auto;
+}
+
+.books-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f8f8f8;
+    padding: 3px;
+}
+
+.books-header {
+    background: #021d08;
+    margin-bottom: 40px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
+}
+
+
+.book-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.book-title {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #222;
+}
+
+.book-author {
+    color: #555;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 8px 0;
+    color: #000;
+}
+
+.book-card-footer {
+    margin-top: 10px;
+}
+
+.book-cart-btn {
+    background: #199536;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book-cart-btn:hover {
+    background: #0d5f1e;
+}
+
+.stock-tag {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.stock-available {
+    color: green;
+}
+
+.stock-unavailable {
+    color: red;
+}
+
+
+/* Pagination styles */
+.pagination {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background: #28a745;
+    color: white;
+}
+
+.pagination a.active {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination a.prev,
+.pagination a.next {
+    font-weight: bold;
+}
+
