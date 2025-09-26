@@ -45,10 +45,19 @@ body {
     border-radius: 6px;
 }
 
+.book-card:hover {
+    box-shadow: 0 4px 10px rgba(33, 231, 82, 0.564);
+}
+
 .book-title {
     font-size: 18px;
     margin: 10px 0 5px;
     color: #222;
+}
+
+.book-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .book-author {

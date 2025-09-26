@@ -45,6 +45,53 @@
         </div>
     </header>
 
+    <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Your Cart</h2>
+      <button id="closeBtn" class="close-btn">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- Example cart items -->
+      <div class="cart-item">
+        <img src="images/image3.jpg" alt="Book 1" class="cart-img">
+        <div class="cart-info">
+          <span class="cart-title">Book Title 1</span>
+          <span class="cart-price">$20</span>
+          <div class="quantity-control">
+            <button class="decrement" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="1" class="quantity" readonly>
+            <button class="increment" onclick="increaseQty(this)">+</button>
+          </div>
+        </div>
+        <button class="delete-btn" onclick="deleteItem(this)"><i class="fas fa-trash"></i></button>
+      </div>
+
+      <div class="cart-item">
+        <img src="images/image4.jpg" alt="Book 2" class="cart-img">
+        <div class="cart-info">
+          <span class="cart-title">Book Title 2</span>
+          <span class="cart-price">$35</span>
+          <div class="quantity-control">
+            <button class="decrement" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="2" class="quantity" readonly>
+            <button class="increment" onclick="increaseQty(this)">+</button>
+          </div>
+        </div>
+        <button class="delete-btn" onclick="deleteItem(this)"><i class="fas fa-trash"></i></button>
+      </div>
+    </div>
+
+    <div class="checkout">
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+
     <!-- Cover Section -->
     <section class="cover">
         <div class="cover-content">

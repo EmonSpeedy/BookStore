@@ -26,12 +26,18 @@
       </p>
       <span class="stock-tag stock-available"><strong>In Stock</strong></span>
       <p class="book-detail-price"><strong>মূল্য:</strong> ৳350</p>
-
+      <div class="quantity-container">
+        <button class="decrement" onclick="decreaseQty(this)">−</button>
+        <input type="text" class="quantity" value="1" readonly>
+        <button class="increment" onclick="increaseQty(this)">+</button>
+      </div>
       <div class="book-detail-actions">
         <button class="book-detail-btn"><i class="fas fa-cart-plus"></i> কার্টে যোগ করুন</button>
       </div>
     </div>
   </div>
 
+
+  <script src="script.js"></script>
 </body>
 </html>
