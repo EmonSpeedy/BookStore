@@ -38,3 +38,15 @@ overlay.addEventListener("click", () => {
   sidebar.classList.remove("open");
   overlay.classList.remove("show");
 });
+
+function openPDFModal(pdfUrl) {
+  document.getElementById("pdfModal").style.display = "block";
+  document.getElementById("pdfFrame").src = pdfUrl;
+  document.body.style.overflow = "hidden"; // disable background scroll
+}
+
+function closePDFModal() {
+  document.getElementById("pdfModal").style.display = "none";
+  document.getElementById("pdfFrame").src = "";
+  document.body.style.overflow = "auto"; // re-enable scroll
+}
