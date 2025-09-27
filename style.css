@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: "Tiro Bangla", serif;
     font-weight: 400;
     line-height: 1.6;
@@ -133,9 +133,10 @@ body sub {
 .cover-content button.explore-btn {
     padding: 14px 32px;
     font-size: 20px;
+    font-weight: 400;
     border: none;
-    background: #078e26;
-    color: #fff;
+    background: #f0f2f1;
+    color: #267b15;
     cursor: pointer;
     border-radius: 25px;
     transition: background 0.3s ease;
@@ -144,6 +145,7 @@ body sub {
 
 .cover-content button.explore-btn:hover {
     background: #056412;
+    color: #fff;
 }
 
 /* Search Bar */
@@ -861,4 +863,331 @@ i.fas {
 .checkout-btn:hover {
   background: #0f6a11;
 }
+
+/* ================= Order Confirmation Page =================  */
+
+.order-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border: 2px solid #1aa72f;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(11, 210, 11, 0.2);
+}
+
+/* Heading */
+.order-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #116f1f;
+}
+
+/* Two-column layout */
+.order-content {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left side - Cart */
+.order-cart-items {
+  flex: 1;
+}
+
+.order-cart-items h2 {
+  margin-bottom: 15px;
+  color: #0e9236;
+}
+
+.order-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #1d9812;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+
+.order-cart-item img {
+  width: 70px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-cart-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-qty {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+.product-price {
+  color: #0e9236;
+  font-weight: bold;
+}
+
+/* Right side - Form */
+.order-form {
+  flex: 1;
+}
+
+.order-form h2 {
+  margin-bottom: 15px;
+  color: #0e9236;
+}
+
+.order-form-group {
+  margin-bottom: 15px;
+}
+
+.order-form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 500;
+}
+
+.order-form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.order-form-group input:focus {
+  border-color: #1aa72f;
+  box-shadow: 0 0 5px rgba(18, 153, 13, 0.5);
+}
+
+.order-form-group input[readonly] {
+  background: #eee;
+  color: #555;
+  cursor: not-allowed;
+}
+
+/* Submit Button */
+.order-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #0e9236;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #097023;
+}
+
+/* =============== Notification designing ================== */
+
+/* General Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 250px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInOut 4s forwards;
+  margin-bottom: 10px;
+}
+
+/* Notification Types */
+.notification.success {
+  background-color: #0e9236; /* green */
+  border-left: 5px solid #1aa72f;
+}
+
+
+/* Animation */
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* ================ == All Books Page =================   */
+
+.all-books-body {
+    max-width: 90%;
+    margin: auto;
+    background: whitesmoke;
+    padding-bottom: 50px;
+}
+
+.books-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f8f8f8;
+    padding: 3px;
+}
+
+.books-header {
+    background: #021d08;
+    margin-bottom: 40px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
+}
+
+
+.book-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.book-card:hover {
+    box-shadow: 0 4px 10px rgba(33, 231, 82, 0.564);
+}
+
+.book-title {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #222;
+}
+
+.book-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.book-author {
+    color: #555;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 8px 0;
+    color: #000;
+}
+
+.book-card-footer {
+    margin-top: 10px;
+}
+
+.book-cart-btn {
+    background: #199536;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book-cart-btn:hover {
+    background: #0d5f1e;
+}
+
+.stock-tag {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.stock-available {
+    color: green;
+}
+
+.stock-unavailable {
+    color: red;
+}
+
+
+/* Pagination styles */
+.pagination {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background: #28a745;
+    color: white;
+}
+
+.pagination a.active {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination a.prev,
+.pagination a.next {
+    font-weight: bold;
+}
+
+
 

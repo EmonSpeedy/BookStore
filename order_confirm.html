@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="order-container">
+    <h1 class="order-title">অর্ডার কনফার্ম করুন</h1>
+    <hr>
+    <br>
+    <br>
+    <div class="order-content">
+      <!-- Cart Items -->
+      <div class="order-cart-items">
+        <h2>বই সমূহ</h2>
+
+        <div class="order-cart-item">
+          <img src="images/image3.jpg" alt="Product 1">
+          <div class="order-cart-info">
+            <span class="product-name">বইয়ের নাম</span>
+            <span class="product-qty">Quantity: 2</span>
+            <span class="product-price">৳500</span>
+          </div>
+        </div>
+
+        <div class="order-cart-item">
+          <img src="images/image1.jpg" alt="Product 2">
+          <div class="order-cart-info">
+            <span class="product-name">বইয়ের নাম</span>
+            <span class="product-qty">Quantity: 2</span>
+            <span class="product-price">৳300</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customer Info Form -->
+      <form class="order-form">
+        <h2>তথ্যসমূহ দিন</h2>
+        <div class="order-form-group">
+          <label>মোবাইল নম্বর</label>
+          <input type="tel" placeholder="আপনার মোবাইল নম্বর দিন" required>
+        </div>
+        
+        <div class="order-form-group">
+          <label>নাম</label>
+          <input type="text" placeholder="আপনার নাম দিন" required>
+        </div>
+
+        <div class="order-form-group">
+          <label>গ্রাম / এলাকা</label>
+          <input type="text" placeholder="আপনার গ্রাম/এলাকার নাম দিন" required>
+        </div>
+
+        <div class="order-form-group">
+          <label>থানা</label>
+          <input type="text" placeholder="আপনার থানার নাম দিন" required>
+        </div>
+
+        <div class="order-form-group">
+          <label>জেলা</label>
+          <input type="text" placeholder="আপনার জেলার নাম দিন" required>
+        </div>
+
+        <!-- Readonly Fields -->
+        <div class="order-form-group">
+          <label>ক্যাশঅন ডেলিভারির পরিমাণ</label>
+          <input type="text" value="৳800" readonly>
+        </div>
+
+        <div class="order-form-group">
+          <label>পার্সেলের মোট ওজন</label>
+          <input type="text" value="2.5 kg" readonly>
+        </div>
+
+        <div class="order-form-group">
+          <label>ডেলিভারি চার্জ</label>
+          <input type="text" value="৳60" readonly>
+        </div>
+
+        <div class="order-form-group">
+          <label>মোট টাকার পরিমাণ</label>
+          <input type="text" value="৳860" readonly>
+        </div>
+
+        <button type="submit" class="order-btn">অর্ডার কনফার্ম করুন</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
